@@ -324,9 +324,10 @@ button.download {
 }
 
 img.slick-img {
-    width: 80%;
-    margin: auto;
-    display: block;
+    max-width: 60%;
+    height: auto !important;    
+    margin: auto !important;
+    display: block !important;
 }
 
 /*Section Proyecto*/
@@ -529,7 +530,7 @@ div.slick-slider {
     margin: 0 20px 0 20px;
 }
 img.slick-img {
-    width: 100% !important;
+    max-width: 100% !important;
 }
 
 /*Section Contacto*/
@@ -642,7 +643,10 @@ f
     }
     div.slick-slider {
         margin: 0 20px 0 20px;
-    }    
+    }   
+    img.slick-img {
+        max-width: 100% !important;
+    }     
     /*Footer*/
     div.footer-item {
         display: flex;
