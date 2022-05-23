@@ -1,0 +1,733 @@
+/*
+Arcos 4259 Website Styles
+Web Url: https://arcos4259.com.ar
+Author: Julian Battaglino - Studio Krass
+Author URI: https://studiokrass.com.ar
+Description: Arcos 4259
+License: ISC License (ISC)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sugo-pro-classic');
+  
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*Estilos Globales*/
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px !important;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color:  #233645;
+    letter-spacing: 4px;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color:#233645;
+    text-align: left;
+    letter-spacing: 4px;
+}
+
+h3.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color:  #233645;
+    text-align: left;
+    padding-top: 20px;
+}
+
+h3.margin-bottom {
+    margin-bottom: 50px;
+}
+
+h4.mustard {
+    font-family: 'Montserrat', sans-serif;
+    color:  #c0b460;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px; 
+    font-weight: 400;
+    color:  #233645;
+}
+
+mark {
+    background-color: #c0b460;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    padding: 110px 75px 75px 75px;
+}
+
+div.container-fluid {
+    padding: 0 !important;
+    margin: 0 !important
+}
+
+div.row {
+    align-items: center;
+}
+
+div.items {
+    align-items: flex-start !important;
+}
+
+a.btb.btn-dark {
+    background-color: #233645 !important;
+}
+
+article {
+    border-top: 1px solid #000;
+    padding-top: 15px;
+}
+
+button.btn.btn-dark.download.brochure {
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+}
+
+/*Menu Tablet & Desktop*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 75px;
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%);
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+li.menu-item a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color:  #233645 !important;
+    font-weight: 500;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+li.menu-item a:hover {
+    font-weight: bold;
+}
+
+nav a i.fa-brands.fa-instagram {
+    color:  #233645;
+}
+nav a i.fa-brands.fa-facebook {
+    color: #233645;
+    padding-left: 10px;
+}
+
+
+a i.fa-brands.fa-instagram:hover {
+    font-weight: bold;
+}
+
+
+header img.logo {
+    width: 75px;
+    display: flex;
+}
+
+.floating-wsp:hover {
+    opacity: 1;
+}
+
+.floating-wsp {
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 50px;
+    right: 45px;
+    z-index: 120;
+    transition: all 0.6s cubic-bezier(0.68, 0.01, 0.22, 0.99);
+}
+
+/*Sections*/
+section.anchor {
+    padding: 50px 0;
+}
+div.section-container {
+    padding: 40px 0 40px 0 !important;
+}
+
+div.img-flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+img.img-resize {
+    width: 80% !important;
+}
+
+
+section.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    grid-auto-flow: row;
+    padding: 30px 0;
+}
+
+img.grid-item {
+    width: 100%;
+    height: 100%;
+}
+
+img.filter-item-img {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+/*Background img*/
+section.background-intro {
+background-image: url("assets/img/Renders/DGS-Arcos_Interior\ CAM001_00.webp"); /* The image used */
+height: 80vh;
+background-position: bottom right; /* Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+section.background-el-proyecto {
+background-image: url("assets/img/Renders/DGS-Arcos_Interior CAM002_00.webp"); /* The image used */
+height: 75vh;
+background-position: bottom right; /* Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+section.background-terraza {
+background-image: url("assets/img/Renders/DGS-Terraza\ CAM002-00.webp");
+height: 90vh;
+background-position: bottom right;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 50px 0 0 0;
+}
+
+section.background-tranquilidad {
+background-image: url("assets/img/Renders/DGS-Arcos_PBHall_00.webp");
+height: 90vh;
+background-position: bottom right;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 0 0 40px 0;
+}    
+     
+/*Section Proyectos*/
+div.img-container {
+    display: flex;
+    align-items: center;
+}
+img.urbanar-logo {
+    width: 75%;
+    padding-top: 30px;
+}
+
+/*Section Tranquilidad*/
+img.secondary-icons {
+    width: 50%;
+}
+
+/*Section Ubicacion*/
+iframe{
+	height: 50vh;
+    width: 100%;
+
+}
+
+/*Section Materiales*/
+div#materiales {
+    padding: 75px 75px !important;
+    margin: 75px 0;
+}
+
+/*Section Unidades*/
+div.isotope-grid {
+    padding: 50px 0;
+}
+
+div.filters.filter-button-group button.btn.btn-dark{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #233645;
+}
+
+div.filters.filter-button-group button.btn.btn-dark:hover{
+    background-color: #000000;
+}
+
+div.filters.filter-button-group button.btn.btn-dark:focus{
+    background-color: #000000;
+}
+
+
+div.filters.filter-button-group ul {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding-left: 0;
+}
+
+button.download {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: auto;
+    display: block;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #000000 !important;
+}
+
+img.slick-img {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+/*Section Proyecto*/
+div#materiales {
+    background-color: #FAFAFA;
+}
+
+/*Section Contacto*/
+li.contact {
+    list-style-type: none;
+}
+
+li.contact a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #233645;
+}
+.form-control:focus {
+    border-color: #233645;
+    box-shadow: 0 0 0 0.2rem #2336454a;
+} 
+div.row-contact {
+    align-items: flex-start;
+}
+.form-control {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+button.form-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+/*Footer*/
+footer {
+    background-color: #233645;
+    padding: 50px;
+    color: #fff;
+    padding: 75px 75px 25px 75px;
+}
+footer img.logo {
+    width: 75px;
+    display: flex;
+}
+li.footer-item a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #ffffff !important;
+    font-weight: 600;
+    padding: 0 10px;
+    text-decoration: none;
+}
+i.footer-icon {
+    padding-left: 15px;
+}
+footer i.fa-brands.fa-instagram {
+    color: #ffffff !important;
+    padding-left: 10px;
+}
+footer i.fa-brands.fa-facebook {
+    color: #ffffff !important;
+    padding-left: 10px;
+}
+li.copyrigth {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+p.powered {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px; 
+    font-weight: 400;
+    color:  #ffffff;
+    margin-top: 5px;
+}
+img.powered-logo {
+    width: 20px;
+    padding-top: 50px;
+}
+
+
+/**************** Media querie Mobile ****************/
+@media (max-width: 767px){
+html {
+    scroll-padding-top: 325px !important;
+}
+    
+h1 {
+    font-size: 32px;
+}
+h2 {
+    font-size: 28px;
+}
+h3.subtitle {
+    font-size: 16px;
+    text-align: left;
+}
+
+h4.mustard {
+    font-size: 16px;
+}    
+p {
+    font-size: 12px;
+}
+main {
+    padding: 0 10px !important;
+}
+header {
+    display: none;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url(assets/img/hamburguer.png) !important;
+    }
+    li.menu-item a {
+    display: none;
+}  
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-top {
+    background-color: #ffffff !important;
+    padding: 10px 10px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%);
+}
+button.navbar-toggler {
+    border: none !important;
+    }
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+a.navbar-brand img.logo {
+    width: 50px;
+    display: flex;
+}
+ul a.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #233645 !important;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 15px 0;
+}
+ul a.nav-link:hover {
+    text-decoration: underline;
+} 
+section.home-grid {
+    grid-template-columns: 1fr;
+    padding: 30px 0;
+}
+nav a i.fa-brands.fa-facebook {
+    padding-left: 0 !important;
+}
+
+/*Section Intro*/
+section.anchor {
+    margin: 0px 0 40px 0;
+}
+div.intro {
+    padding: 0px 10px 25px 10px;
+}
+
+img.img-resize {
+    width: 100% !important;
+}
+
+
+/*Section Proyectos*/
+div.img-container {
+    margin-bottom: 0;
+}
+
+
+/*Section Materiales*/
+div#materiales {
+    padding: 25px 10px !important;
+    margin: 0;
+
+}
+/*Section Ubicacion*/
+iframe{
+    height: 40vh;
+    width: 100%;
+}
+
+/*Pagina Unidades*/
+div.isotope-grid {
+    padding: 50px 0;
+}
+div.filters.filter-button-group ul {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding-left: 0;
+}
+div.section-container {
+    padding: 40px 0 40px 0 !important;
+}
+
+div.slick-slider {
+    margin: 0 20px 0 20px;
+}
+img.slick-img {
+    width: 100% !important;
+}
+
+/*Section Contacto*/
+form#contactForm {
+    margin-top: 50px;
+}
+
+li.contact a {
+    font-size: 12px;
+    font-weight: 400;
+}
+    
+section.background-tranquilidad {
+    height: 35vh;
+    }
+            
+div.direction-row {
+    align-items: center;
+    flex-direction: row;
+}
+/*Footer*/
+div.footer-item {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+ul.footer {
+    display: block;
+    padding-left: 0;
+    text-align: center;
+}
+div.footer-rrss {
+    margin-top: 10px;
+}
+i.fa-brands.fa-instagram {
+    padding-left: 0 !important;
+}
+i.fa-brands.fa-facebook {
+    padding-left: 10px;
+}
+p.powered {
+    text-align: center;
+}
+img.powered-logo {
+    margin: auto;
+    display: block;
+}
+
+}
+
+/**************** Media querie Tablets ****************/
+@media (min-width: 767px) and (max-width: 1199px){
+    h1 {
+        font-size: 32px;
+    }
+    h2.title {
+        font-size: 32px;
+    }
+    p {
+        font-size: 14px;
+    }
+    main {
+        padding: 0px 10px 75px 10px;
+    }
+    section.home-grid {
+        grid-template-columns: 1fr 1fr;
+        padding: 30px 0;
+    }
+    header {
+        padding: 15px 10px;
+    }
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-top {
+        display: none;
+    }
+    div.filters.filter-button-group ul {
+        display: none;
+    }
+    li.menu-item a {
+    font-size: 12px;
+    }
+    /*Section Proyectos*/
+
+    /*Section Ubicacion*/
+    iframe{
+        height: 30vh;
+        width: 100%;
+    }
+
+
+    /*Section Materiales*/
+    div#materiales {
+        padding: 75px 10px !important;
+        margin: 0 0;
+    }
+
+    /*Pagina Unidades*/
+    div.isotope-grid {
+        padding: 50px 0;
+    }
+    div.filters.filter-button-group ul {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        padding-left: 0;
+    }
+f            
+    div.row.reverse {
+        align-items: center;
+    }
+    div.slick-slider {
+        margin: 0 20px 0 20px;
+    }    
+    /*Footer*/
+    div.footer-item {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    ul.footer {
+        display: block;
+        padding-left: 0;
+        text-align: center;
+    }
+    i.fa-brands.fa-instagram {
+        padding-left: 0 !important;
+    }
+    div.footer-rrss {
+        margin-top: 10px;
+    }
+    p.powered {
+        text-align: center;
+    }
+    img.powered-logo {
+        margin: auto;
+        display: block;
+    }
+    
+}  
+
+@media (min-width: 1200px) {
+    /*Disable Bootstrap Menu*/
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-top {
+        display: none;
+    }
+}
+
+@media (max-width: 420px){
+/*Background img*/
+section.background-intro {
+    height: 30vh;
+} 
+section.background-el-proyecto {
+    height: 30vh;
+    }
+section.background-terraza {
+    height: 30vh;
+    margin: 50px 0 0 0;
+
+    }
+    
+section.background-tranquilidad {
+    height: 30vh;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 767px){
+/*Background img*/
+section.background-intro {
+    height: 60vh;
+} 
+section.background-el-proyecto {
+    height: 60vh;
+    }
+section.background-terraza {
+    height: 60vh;
+    }
+    
+section.background-tranquilidad {
+    height: 60vh;
+    }
+}
+
+
+
+@media (min-width: 767px) and (max-width: 1199px){
+/*Background img*/
+section.background-intro {
+    height: 80vh;
+} 
+section.background-el-proyecto {
+    height: 70vh;
+    }
+section.background-terraza {
+    height: 80vh;
+    }
+    
+section.background-tranquilidad {
+    height: 80vh;
+    }
+}
