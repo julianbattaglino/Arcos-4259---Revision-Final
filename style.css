@@ -283,6 +283,10 @@ div#materiales {
 }
 
 /*Section Unidades*/
+section#unidades {
+    height: 100vh;
+}
+
 div.isotope-grid {
     padding: 50px 0;
 }
@@ -317,10 +321,6 @@ button.download {
     font-weight: 500;
     margin: auto;
     display: block;
-}
-
-.slick-prev:before, .slick-next:before {
-    color: #000000 !important;
 }
 
 img.slick-img {

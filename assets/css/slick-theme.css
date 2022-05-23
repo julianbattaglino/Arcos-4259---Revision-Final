@@ -40,6 +40,7 @@
     border: none;
     outline: none;
     background: transparent;
+    z-index: 1;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -67,11 +68,11 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 40px;
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: #233645;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -97,7 +98,7 @@
 
 .slick-next
 {
-    right: -25px;
+    right: -5px;
 }
 [dir='rtl'] .slick-next
 {
