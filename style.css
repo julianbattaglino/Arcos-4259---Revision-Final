@@ -411,7 +411,7 @@ img.powered-logo {
 /**************** Media querie Mobile ****************/
 @media (max-width: 767px){
 html {
-    scroll-padding-top: 325px !important;
+    scroll-padding-top: 350px !important;
 }
     
 h1 {
