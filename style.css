@@ -267,11 +267,12 @@ img.urbanar-logo {
 /*Section Tranquilidad*/
 img.secondary-icons {
     width: 50%;
+    padding-top: 20px;
 }
 
 /*Section Ubicacion*/
 iframe{
-	height: 50vh;
+	height: 60vh;
     width: 100%;
 
 }
