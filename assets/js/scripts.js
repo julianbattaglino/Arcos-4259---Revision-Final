@@ -39,7 +39,7 @@ function recaptchaCallback() {
 }
 
 function recaptchaExpiredCallback() {
-    // TODO implementar expired callback
+    grecaptcha.reset();
 }
 
 function recaptchaErrorCallback() {
