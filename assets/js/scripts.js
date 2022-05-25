@@ -1,0 +1,47 @@
+$(document).ready(function () {
+    <!--  Navbar Collapse on Scroll (Script) -->
+    $('.navbar-nav>li>a').on('click', function () {
+        $('.navbar-collapse').collapse('hide');
+    });
+
+    <!--  AOS INIT js -->
+    AOS.init();
+
+    <!--  Lightbox2 INIT js -->
+    lightbox.option({
+        'alwaysShowNavOnTouchDevices': true,
+        'positionFromTop': 150,
+        'resizeDuration': 200,
+        'disableScrolling': true,
+        'wrapAround': true
+    });
+
+    <!--  Slick Init js -->
+    $('.slick-slider').slick({
+        dots: true, infinite: true, speed: 500, fade: true, cssEase: 'linear'
+    });
+
+    $('.isotope-grid').isotope({
+        itemSelector: '.grid-item', layoutMode: 'fitRows', filter: '.planta-baja'
+    });
+
+    // filter items on button click
+    $('.filter-button-group').on('click', 'button', function () {
+        let filterValue = $(this).attr('data-filter');
+        $('.isotope-grid').isotope({filter: filterValue});
+        $('.filter-button-group').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+
+function recaptchaCallback() {
+    $('#submitBtn').removeAttr('disabled');
+}
+
+function recaptchaExpiredCallback() {
+    // TODO implementar expired callback
+}
+
+function recaptchaErrorCallback() {
+    // TODO implementar error callback
+}
