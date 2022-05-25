@@ -40,12 +40,13 @@ function recaptchaCallback() {
 
 function recaptchaExpiredCallback() {
     // Resetear recaptcha en caso de que el captcha expire
-    grecaptcha.reset();
     $('#submitBtn').attr('disabled', true);
+    grecaptcha.reset();
+    
 }
 
 function recaptchaErrorCallback() {
     // Resetear recaptcha en caso de error por network connectivity
-    grecaptcha.reset();
     $('#submitBtn').attr('disabled', true);
+    grecaptcha.reset();
 }
