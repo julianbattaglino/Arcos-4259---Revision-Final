@@ -40,8 +40,8 @@ function recaptchaCallback() {
 
 function recaptchaExpiredCallback() {
     // Resetear recaptcha en caso de que el captcha expire
-    $('#submitBtn').attr('disabled', true);
-    grecaptcha.prop();
+    $('#submitBtn').prop('disabled', true);
+    grecaptcha.reset();
     
 }
 
