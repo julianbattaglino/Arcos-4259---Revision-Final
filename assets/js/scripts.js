@@ -35,18 +35,18 @@ $(document).ready(function () {
 });
 
 function recaptchaCallback() {
-    $('#submitBtn').attr('disabled', false);
+    $('#submitBtn').prop('disabled', false);
 }
 
 function recaptchaExpiredCallback() {
     // Resetear recaptcha en caso de que el captcha expire
     $('#submitBtn').attr('disabled', true);
-    grecaptcha.reset();
+    grecaptcha.prop();
     
 }
 
 function recaptchaErrorCallback() {
     // Resetear recaptcha en caso de error por network connectivity
-    $('#submitBtn').attr('disabled', true);
+    $('#submitBtn').prop('disabled', true);
     grecaptcha.reset();
 }
