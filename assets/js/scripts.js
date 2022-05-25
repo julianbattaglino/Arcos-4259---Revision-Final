@@ -1,13 +1,13 @@
 $(document).ready(function () {
-    <!--  Navbar Collapse on Scroll (Script) -->
+    // Navbar Collapse on Scroll (Script)
     $('.navbar-nav>li>a').on('click', function () {
         $('.navbar-collapse').collapse('hide');
     });
 
-    <!--  AOS INIT js -->
+    //<!--  AOS INIT js -->
     AOS.init();
 
-    <!--  Lightbox2 INIT js -->
+    // Lightbox2 INIT js
     lightbox.option({
         'alwaysShowNavOnTouchDevices': true,
         'positionFromTop': 150,
@@ -16,7 +16,7 @@ $(document).ready(function () {
         'wrapAround': true
     });
 
-    <!--  Slick Init js -->
+    // Slick Init js
     $('.slick-slider').slick({
         dots: true, infinite: true, speed: 500, fade: true, cssEase: 'linear'
     });
