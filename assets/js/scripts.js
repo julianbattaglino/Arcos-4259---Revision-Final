@@ -36,13 +36,15 @@ $(document).ready(function () {
 
 function recaptchaCallback() {
     $('#submitBtn').prop('disabled', false);
+    $('#verifica').hide();
+    $('#sucess').show();
 }
 
 function recaptchaExpiredCallback() {
     // Resetear recaptcha en caso de que el captcha expire
     $('#submitBtn').prop('disabled', true);
     grecaptcha.reset();
-    
+    $('#sucess').hide();
 }
 
 function recaptchaErrorCallback() {

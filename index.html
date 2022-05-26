@@ -387,7 +387,10 @@
 			  			  
 				  <!-- Form submit button -->
 				  <div class="d-grid" style="margin-bottom: 16px;"><button class="btn btn-dark btn-lg form-btn" type="submit" name="submit" id="submitBtn" disabled>Enviar</button></div>
-                    <div class="g-recaptcha" data-expired-callback="recaptchaExpiredCallback" data-error-callback="recaptchaErrorCallback" data-callback="recaptchaCallback" data-sitekey="6LevSbMfAAAAALsDxfoNpuHQ17TzYdywlDaBuR0K"></div>
+          <!--Callbacks Alerts-->
+          <div id="verifica" class="alert alert-info" role="alert">Porfavor, verifica que no eres un robot.</div>
+          <div id="sucess" class="alert alert-success" role="alert" style="display: none;">No eres un robot!</div>
+          <div class="g-recaptcha" data-expired-callback="recaptchaExpiredCallback" data-error-callback="recaptchaErrorCallback" data-callback="recaptchaCallback" data-sitekey="6LevSbMfAAAAALsDxfoNpuHQ17TzYdywlDaBuR0K"></div>
 			  
 				</form>
 			  
