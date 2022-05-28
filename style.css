@@ -104,7 +104,7 @@ article {
 button.btn.btn-dark.download.brochure {
     margin: auto;
     display: block;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 /*Menu Tablet & Desktop*/
@@ -681,39 +681,40 @@ f
     }
 }
 
-@media (max-width: 420px){
+@media (min-width: 200px) and (max-width: 500px) {
 /*Background img*/
 section.background-intro {
-    height: 30vh;
+    height: 25vh;
 } 
 section.background-el-proyecto {
     height: 30vh;
     }
-section.background-terraza {
+    section.background-terraza {
     height: 30vh;
-    margin: 50px 0 0 0;
-
+    margin: 40px 0 0 0;
     }
-    
 section.background-tranquilidad {
     height: 30vh;
     }
 }
 
-@media (min-width: 420px) and (max-width: 767px){
+
+
+
+@media (min-width: 500px) and (max-width: 767px){
 /*Background img*/
 section.background-intro {
-    height: 60vh;
+    height: 30vh;
 } 
 section.background-el-proyecto {
-    height: 60vh;
+    height: 40vh;
     }
-section.background-terraza {
-    height: 60vh;
+    section.background-terraza {
+    height: 40vh;
+    margin: 40px 0 0 0;
     }
-    
 section.background-tranquilidad {
-    height: 60vh;
+    height: 40vh;
     }
 }
 
@@ -735,3 +736,21 @@ section.background-tranquilidad {
     height: 80vh;
     }
 }
+
+@media (min-width: 1200px) and (max-width: 1400px){
+
+li.footer-item a {
+    font-size: 12px;
+    padding: 0 4px;
+    }
+li.copyrigth {
+    font-size: 10px;
+    }
+}
+
+#myVideo {
+    right: 0;
+    bottom: 0;
+    max-width: 100%; 
+    max-height: 100vh;
+  }
