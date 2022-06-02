@@ -684,17 +684,17 @@ f
 @media (min-width: 200px) and (max-width: 500px) {
 /*Background img*/
 section.background-intro {
-    height: 25vh;
+    height: 35vh;
 } 
 section.background-el-proyecto {
-    height: 30vh;
+    height: 35vh;
     }
     section.background-terraza {
-    height: 30vh;
+    height: 35vh;
     margin: 40px 0 0 0;
     }
 section.background-tranquilidad {
-    height: 30vh;
+    height: 35vh;
     }
 }
 
@@ -704,17 +704,17 @@ section.background-tranquilidad {
 @media (min-width: 500px) and (max-width: 767px){
 /*Background img*/
 section.background-intro {
-    height: 30vh;
+    height: 50vh;
 } 
 section.background-el-proyecto {
-    height: 40vh;
+    height: 50vh;
     }
     section.background-terraza {
-    height: 40vh;
+    height: 50vh;
     margin: 40px 0 0 0;
     }
 section.background-tranquilidad {
-    height: 40vh;
+    height: 50vh;
     }
 }
 
@@ -723,7 +723,7 @@ section.background-tranquilidad {
 @media (min-width: 767px) and (max-width: 1199px){
 /*Background img*/
 section.background-intro {
-    height: 80vh;
+    height: 70vh;
 } 
 section.background-el-proyecto {
     height: 70vh;
